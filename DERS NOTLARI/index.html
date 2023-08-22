@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ders Takip Uygulaması</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('arkaplan.jpg'); 
+            background-size: cover;
+            
+        }
+        .header {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background-color: purple;
+            color: black;
+            padding: 10px;
+            width: 100%;
+        }
+        .container {
+            text-align: center;
+            font-size: 18px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .input-group input {
+            margin-bottom: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            border: none;
+            background-color: purple;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+        ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        ul li input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        ul li button {
+            background-color: transparent;
+            border: none;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        DERS TAKİP UYGULAMASI
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" id="task" placeholder="Ders Adı">
+            <input type="text" id="note" placeholder="Not">
+            <input type="text" id="todos" placeholder="Hedefler">
+            <button id="add">Ekle</button>
+        </div>
+        <div id="task-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
